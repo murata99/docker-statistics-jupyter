@@ -2,8 +2,8 @@ FROM murata99/docker-statistics-image
 
 RUN apt-get update && \
     apt-get -y install python-pip && \
-    pip install --upgrade pip && \
     apt-get -y install ipython ipython-notebook && \
+    pip install --upgrade pip && \
     pip install jupyter
 
 RUN julia -e 'Pkg.add("IJulia")'
