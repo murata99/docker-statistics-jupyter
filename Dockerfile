@@ -3,6 +3,7 @@ FROM murata99/docker-statistics-image
 RUN apt-get update && \
     apt-get -y install python-pip && \
     apt-get -y install ipython ipython-notebook && \
+    apt-get -y install hdf5-tools && \
     pip install --upgrade pip && \
     pip install jupyter
 
